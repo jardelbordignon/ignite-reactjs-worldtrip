@@ -1,0 +1,78 @@
+{
+  "continents": [
+    {
+      "name": "europa",
+      "label": "Europa",
+      "description": "O continente mais antigo.",
+      "image": "https://images.unsplash.com/photo-1572471183156-186ef643ecb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80",
+      "text": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": [
+        { "number": 50, "label": "países"},
+        { "number": 60, "label": "línguas"},
+        { "number": 27, "label": "cidades +100"}
+      ],
+      "cities": [
+        {
+          "image": "https://th.bing.com/th/id/OIP.28yh5fgHlYFLtQBbASFLMAHaE8",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "country_flag": "united-kingdom.svg"
+        },
+        {
+          "image": "https://th.bing.com/th/id/OIP.28yh5fgHlYFLtQBbASFLMAHaE8",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "country_flag": "united-kingdom.svg"
+        },
+        {
+          "image": "https://th.bing.com/th/id/OIP.28yh5fgHlYFLtQBbASFLMAHaE8",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "country_flag": "united-kingdom.svg"
+        },
+        {
+          "image": "https://th.bing.com/th/id/OIP.28yh5fgHlYFLtQBbASFLMAHaE8",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "country_flag": "united-kingdom.svg"
+        },
+        {
+          "image": "https://th.bing.com/th/id/OIP.28yh5fgHlYFLtQBbASFLMAHaE8",
+          "name": "Londres",
+          "country": "Reino Unido",
+          "country_flag": "united-kingdom.svg"
+        }
+      ]
+    },
+    {
+      "name": "north-america",
+      "label": "América do Norte",
+      "description": "Cidades cosmopolitas, desérticas, nevadas",
+      "image": "https://images.unsplash.com/photo-1602591051906-00c8f04cee67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80"
+    },
+    {
+      "name": "south-america",
+      "label": "América do Sul",
+      "description": "Maior floresta tropical e o maior rio do mundo, lindas praias",
+      "image": "https://images.unsplash.com/photo-1481847192789-cefc1b048972?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80"
+    },
+    {
+      "name": "asia",
+      "label": "Ásia",
+      "description": "Maior continente",
+      "image": "https://images.unsplash.com/photo-1597052143717-ef34c4b8494e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80"
+    },
+    {
+      "name": "africa",
+      "label": "África",
+      "description": "Famosa por suas belezas naturais.",
+      "image": "https://images.unsplash.com/photo-1560767981-6d26933ba98d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80"
+    },
+    {
+      "name": "oceania",
+      "label": "Oceania",
+      "description": "20 mil ilhas e atóis, paisagens paradisíacas.",
+      "image": "https://images.unsplash.com/photo-1588001400947-6385aef4ab0e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+.swiper-wrapper {
+  width: 100%;
+  max-width: 1240px;
+}
+.swiper-slide {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide a {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: bold;
+}
+.swiper-slide a:hover h1 {
+  color: #FFBA08;
+}
+
+.swiper-slide a h1 {
+  font-size: 48px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #FFBA08;
+  font-size: 22px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFBA08;
+}
