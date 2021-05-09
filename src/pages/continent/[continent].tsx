@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box, SimpleGrid } from '@chakra-ui/react'
+import { Flex, Text, Image, Box, SimpleGrid, useBreakpointValue } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 import { Header } from '../../components/Header'
@@ -9,10 +9,13 @@ export default function Continent() {
   const router = useRouter()
   const { continent } = router.query
 
+  const isLgVersion = useBreakpointValue({ base: false, lg: true })
+  const isMdVersion = useBreakpointValue({ base: false, md: true })
+
   if (!continent) return <Text>Carregando...</Text>
 
   const continentData = continents.find(c => c.name === continent)
-  const { description, image, label, name, text, info, cities } = continentData
+  const { image, label, text, info, cities } = continentData
 
   return (
     <Flex direction='column' h='100vh' mb='10'>
@@ -24,26 +27,35 @@ export default function Continent() {
 
       <Flex w='100%' maxWidth={1160} mx='auto' direction='column'>
 
-        <Flex w='100%' justify='space-between'>
-          <Box width='100%' maxWidth={600}>
+        <Flex
+          w='100%'
+          align='center'
+          justify={isLgVersion ? 'space-between' : 'center'}
+          direction={isLgVersion ? 'row' : 'column'}
+          p='2'
+        >
+          <Box width='100%' maxWidth={600} px='2'>
             <Text align='justify' fontSize={24}>{ text }</Text>
           </Box>
 
-          <Flex width='100%' maxWidth={490} justify='space-between' align='center'>
+          <Flex width='100%' maxWidth={490} justify='space-between' align='center'
+            px='2'
+            mt={isLgVersion ? 0 : 3}
+          >
             {
               info.map(data => (
                 <Box align='center' key={data.label}>
                   <Text
                     as='h1'
                     color='#FFBA08'
-                    fontSize={48}
+                    fontSize={isMdVersion ? 48 : 24}
                     fontWeight='semibold'
                   >
                     {data.number}
                   </Text>
                   <Text
                     as='span'
-                    fontSize={24}
+                    fontSize={isMdVersion ? 24 : 18}
                     fontWeight='semibold'
                   >
                     {data.label}
@@ -54,11 +66,13 @@ export default function Continent() {
           </Flex>
         </Flex>
 
-        <Flex w='100%' justify='space-between' mt='20' mb='10' direction='column'>
+        <Flex w='100%' mt='20' mb='10' direction='column' p='4'>
 
           <Text fontSize={36} mb='10'>Cidades +100</Text>
           
-          <SimpleGrid minChildWidth="256px" columns={4} spacingY='40px' spacingX='10px'>
+          <SimpleGrid minChildWidth="256px" 
+            columns={4} spacingY='40px' spacingX='10px'
+            mx={isMdVersion ? '' : 'auto'}>
 
             {
               cities.map(city => (
